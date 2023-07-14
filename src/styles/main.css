@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+button {
+    border: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #A8A8A8;
+    cursor: pointer;
+}
+
+/* heading */
+
+header {
+    margin-top: 1.75rem;
+    display: flex;
+    text-align: center;
+    width: 90rem;
+    height: 6.25rem;
+}
+
+
+h1 {
+    margin-left: 1rem;
+    color: white;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* padding-left: ; */
+}
+
+.logoB {
+    margin-left: 1rem;
+    width: 3.375rem;
+    height: 3.375rem;
+    flex-shrink: 0;
+}
+
+li {
+    padding-left: 3.6rem;
+    width: 5.8rem;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ul {
+    margin-left: 15rem;
+    display: flex;
+    list-style-type: none;
+}
+
+.menuBar {
+    color: #A8A8A8;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logInBut {
+    margin-top: 0.5rem;
+    margin-left: 44rem;
+    width: 7rem;
+    height: 2.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #FFF;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blackThe {
+    margin-top: 0.1rem;
+    margin-left: 4.4rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.blackTh {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* body */
+
+.mainBlock {
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+}
+
+.body1 {
+    width: 44.95rem;
+    height: 44.95rem;
+    flex-shrink: 0;
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 87.50%, #000 100%), url("./src/img/body1.jpg"), lightgray 50% / cover no-repeat; */
+}
+
+.blockBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25.5rem;
+    height: 44.4375rem;
+    flex-shrink: 0;
+}
+
+.textBody {
+    color: #FFF;
+    font-family: Prompt;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* mainBlock2 */
+
+h2 {
+    width: 52rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Podkova;
+    font-size: 2.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 99.8%;
+}
+
+.textBlock {
+    margin-left: 2rem;
+}
+
+.textMain {
+    margin-top: 3rem;
+    color: #FFF;
+    font-family: Podkova;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 38.6875rem;
+    height: 16.0625rem;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.mainBlock2 {
+    height: 38.625rem;
+    margin-bottom: 0px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #000 84.90%, #2D2D2D 97.40%);
+}
+
+.exp {
+    display: flex;
+}
+
+.carImg {
+    width: 25rem;
+    height: 24rem;
+    flex-shrink: 0;
+    border: 3px solid #FFF;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 8px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.card {
+    position: absolute;
+    width: 25rem;
+    height: 24rem;
+    left: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.container {
+    margin-left: 20rem;
+    margin-top: 5rem;
+    width: 75%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+}
+
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.divMainBut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    /* margin-left: 10rem; */
+}
+
+.mainBut {
+
+    text-align: center;
+    width: 20.4375rem;
+    height: 2.9375rem;
+    color: black;
+    background-color: white;
+    font-family: "Holtwood One SC", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 15px;
+}
+
+/* footer */
+
+footer {
+    padding: 0;
+    height: 11.1875rem;
+    flex-shrink: 0;
+    background-color: #2D2D2D;
+}
+
+.imgFoot {
+    padding-top: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.imgElemFoot {
+    padding-left: 1rem;
+    width: 2.2rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+}
+
+.pFoot {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #7D7D7D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05688rem;
+}
