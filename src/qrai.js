@@ -73,7 +73,7 @@ function App2() {
                             <label htmlFor="fileInput" style={{ display: 'inline-block', cursor: 'pointer' }}>
                                 {mainImage ? (
                                     <div
-                                        className="w-128 h-96 border-4 border-dashed border-gray-300 rounded-2% mb-10"
+                                        className="w-96 h-96 border-4 border-dashed border-gray-300 rounded-2% mb-10"
                                         style={{ backgroundImage: `url(${mainImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
                                     />
                                 ) : (
